@@ -1,0 +1,11 @@
+{
+	"name": "Healthsymptom",
+	"crud": {
+		"unique": ["url"],
+		"update": {
+			"keys": ["name", "description", "data", "patient"]
+		},
+		"delete": [""]
+	},
+	"dependencies": {}
+}

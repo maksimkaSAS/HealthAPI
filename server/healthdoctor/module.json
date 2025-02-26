@@ -1,0 +1,12 @@
+{
+	"name": "Healthdoctor",
+	"crud": {
+		"unique": ["url"],
+		"get": ["", "public"],
+		"update": {
+			"keys": ["name", "description", "data", "clinic"]
+		},
+		"delete": [""]
+	},
+	"dependencies": {}
+}

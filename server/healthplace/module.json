@@ -1,0 +1,20 @@
+{
+	"name": "Healthplace",
+	"crud": {
+		"unique": ["url"],
+		"get": ["", "public"],
+		"update": {
+			"keys": [
+				"name",
+				"description",
+				"data",
+				"address",
+				"latitude",
+				"longitude",
+				"placeType"
+			]
+		},
+		"delete": [""]
+	},
+	"dependencies": {}
+}

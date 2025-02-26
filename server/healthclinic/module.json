@@ -1,0 +1,23 @@
+{
+	"name": "Healthclinic",
+	"crud": {
+		"unique": ["url"],
+		"get": ["", "public"],
+		"update": {
+			"keys": [
+				"name",
+				"description",
+				"data",
+				"phone",
+				"email",
+				"website",
+				"workingHours",
+				"licenseNumber",
+				"specialties",
+				"clinicType"
+			]
+		},
+		"delete": [""]
+	},
+	"dependencies": {}
+}

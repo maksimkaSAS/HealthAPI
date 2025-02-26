@@ -1,0 +1,11 @@
+{
+	"name": "Healthrecord",
+	"crud": {
+		"unique": ["url"],
+		"update": {
+			"keys": ["name", "description", "data", "patient", "disease"]
+		},
+		"delete": [""]
+	},
+	"dependencies": {}
+}

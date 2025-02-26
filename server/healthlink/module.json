@@ -1,0 +1,11 @@
+{
+	"name": "Healthlink",
+	"crud": {
+		"unique": ["url"],
+		"update": {
+			"keys": ["name", "description", "data", "place", "pharmacy", "drug"]
+		},
+		"delete": [""]
+	},
+	"dependencies": {}
+}

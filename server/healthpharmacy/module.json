@@ -1,0 +1,23 @@
+{
+	"name": "Healthpharmacy",
+	"crud": {
+		"unique": ["url"],
+		"get": ["", "public"],
+		"update": {
+			"keys": [
+				"name",
+				"description",
+				"data",
+				"address",
+				"phone",
+				"email",
+				"workingHours",
+				"website",
+				"availableMedicines",
+				"deliveryAvailable"
+			]
+		},
+		"delete": [""]
+	},
+	"dependencies": {}
+}

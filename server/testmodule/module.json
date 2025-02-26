@@ -1,0 +1,13 @@
+{
+	"name": "Testmodule",
+	"crud": {
+		"unique": ["url"],
+		"update": {
+			"keys": ["name", "description", "data", "testfield"]
+		},
+		"delete": [""]
+	},
+	"dependencies": {
+		"njwt": "*"
+	}
+}

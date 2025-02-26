@@ -1,0 +1,19 @@
+{
+	"name": "Healthdrug",
+	"crud": {
+		"unique": ["url"],
+		"update": {
+			"keys": [
+				"name",
+				"description",
+				"data",
+				"dose",
+				"frequency",
+				"startDate",
+				"place"
+			]
+		},
+		"delete": [""]
+	},
+	"dependencies": {}
+}

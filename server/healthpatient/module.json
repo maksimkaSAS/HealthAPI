@@ -1,0 +1,25 @@
+{
+	"name": "Healthpatient",
+	"crud": {
+		"unique": ["url"],
+		"get": ["", "public"],
+		"update": {
+			"keys": [
+				"name",
+				"description",
+				"data",
+				"dateOfBirth",
+				"gender",
+				"category",
+				"phone",
+				"email",
+				"address",
+				"thumb"
+			]
+		},
+		"delete": [""]
+	},
+	"dependencies": {
+		"njwt": "*"
+	}
+}
