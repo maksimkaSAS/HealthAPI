@@ -8,6 +8,7 @@ module.exports = async function (waw) {
 		placeType: String,
 		pharmacy: String,
 		clinic: String,
+
 		url: { type: String, sparse: true, trim: true, unique: true },
 		data: {},
 		author: {
@@ -39,7 +40,7 @@ module.exports = async function (waw) {
 		this.longitude = obj.longitude;
 		this.placeType = obj.placeType;
 		this.pharmacy = obj.pharmacy;
-		this.clinic = obj.pharmacy;
+		this.clinic = obj.clinic;
 	};
 	return (waw.Healthplace = waw.mongoose.model("Healthplace", Schema));
 };
