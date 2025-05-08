@@ -3,6 +3,11 @@ module.exports = async function (waw) {
 		name: String,
 		description: String,
 		clinic: String,
+		phone: String,
+		specialty: String,
+		experienceYears: String,
+		consultationFee: String,
+
 		url: { type: String, sparse: true, trim: true, unique: true },
 		data: {},
 		author: {
@@ -32,6 +37,14 @@ module.exports = async function (waw) {
 		this.url = obj.url;
 
 		this.clinic = obj.clinic;
+
+		this.phone = obj.phone;
+
+		this.specialty = obj.specialty;
+
+		this.experienceYears = obj.experienceYears;
+
+		this.consultationFee = obj.consultationFee;
 	};
 	return (waw.Healthdoctor = waw.mongoose.model("Healthdoctor", Schema));
 };

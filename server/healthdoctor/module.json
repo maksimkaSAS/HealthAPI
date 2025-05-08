@@ -4,7 +4,7 @@
 		"unique": ["url"],
 		"get": ["", "public"],
 		"update": {
-			"keys": ["name", "description", "data", "clinic"]
+			"keys": ["name", "description", "data", "clinic", "phone", "specialty", "experienceYears", "consultationFee"]
 		},
 		"delete": [""]
 	},

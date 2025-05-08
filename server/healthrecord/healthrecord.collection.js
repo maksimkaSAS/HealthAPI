@@ -4,6 +4,12 @@ module.exports = async function (waw) {
 		description: String,
 		patient: String,
 		disease: String,
+		type: String,
+		diagnosis: String,
+		allergy: String,
+		result: String,
+		treatmentType: String,
+
 		url: { type: String, sparse: true, trim: true, unique: true },
 		data: {},
 		author: {
@@ -35,6 +41,16 @@ module.exports = async function (waw) {
 		this.patient = obj.patient;
 
 		this.disease = obj.disease;
+
+		this.type = obj.type;
+
+		this.diagnosis = obj.diagnosis;
+
+		this.allergy = obj.allergy;
+
+		this.result = obj.result;
+
+		this.treatmentType = obj.treatmentType;
 	};
 	return (waw.Healthrecord = waw.mongoose.model("Healthrecord", Schema));
 };

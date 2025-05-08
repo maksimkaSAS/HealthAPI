@@ -3,7 +3,7 @@
 	"crud": {
 		"unique": ["url"],
 		"update": {
-			"keys": ["name", "description", "data", "patient", "disease"]
+			"keys": ["name", "description", "data", "patient", "disease", "type", "diagnosis", "allergy", "result", "treatmentType"]
 		},
 		"delete": [""]
 	},
