@@ -6,6 +6,10 @@ module.exports = async (waw) => {
 			query.patient = req.query.patient;
 		}
 
+		if (req.query.type) {
+			query.type = req.query.type;
+		}
+
 		if (req.query.disease) {
 			query.disease = req.query.disease;
 		}
