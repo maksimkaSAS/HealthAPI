@@ -5,6 +5,20 @@ module.exports = async (waw) => {
 		if (req.query.clinic) {
 			query.clinic = req.query.clinic;
 		}
+
+
+		if (req.query.search) {
+			query["$or"] = [
+				{ name: { $regex: req.query.search, $options: "i" } },
+				{ phone: { $regex: req.query.search, $options: "i" } },
+				{
+					description: {
+						$regex: req.query.search,
+						$options: "i",
+					},
+				},
+			];
+		}
 		console.log("Doctor query: ", req.query, query);
 	};
 
