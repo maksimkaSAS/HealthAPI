@@ -2,6 +2,7 @@
 	"name": "Healthdrug",
 	"crud": {
 		"unique": ["url"],
+		"get": ["", "public"],
 		"update": {
 			"keys": [
 				"name",

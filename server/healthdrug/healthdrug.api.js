@@ -22,6 +22,18 @@ module.exports = async (waw) => {
 					return query;
 				},
 			},
+
+			{
+				name: "public",
+				ensure: waw.next,
+				query: (req, res) => {
+					const query = {};
+
+					querySet(query, req);
+
+					return query;
+				},
+			},
 		],
 	};
 
